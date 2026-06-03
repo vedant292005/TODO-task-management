@@ -2,6 +2,8 @@
 
 A full-stack task management web application with secure authentication, cloud persistence, and an AI assistant that can read and modify tasks through natural language.
 
+**Repository:** [github.com/vedant292005/TODO-task-management](https://github.com/vedant292005/TODO-task-management)
+
 ---
 
 ## Project Overview
