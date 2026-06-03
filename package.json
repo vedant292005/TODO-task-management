@@ -1,0 +1,36 @@
+{
+  "name": "todo-task-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:web": "node scripts/wait-for-api.mjs && vite",
+    "dev:server": "tsx watch server/index.ts",
+    "start": "npm run dev",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.20.5",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "chromadb": "^3.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^11.10.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
